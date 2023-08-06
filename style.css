@@ -1,8 +1,29 @@
-#greeting p{
-    background-color: hsl(240, 65%, 75%);
-    padding: 10px;
-    display: none;
+h1::first-letter{
+    font-size: 2em;
+    font-style:italic;
 }
-#greeting:hover p{
-    display:block;
+
+p::first-line{
+    background-color: hsl(60, 100%, 50%);
+}
+p::selection{
+    color: white;
+    background-color: hsl(115, 60%, 63%);
+}
+#fruit li::before{
+
+}
+#apple::after{
+    content:"🍎";
+}
+#orange::after{
+    content:"🍊";
+}
+#banana::after{
+    content:"🍌";
+}
+#fruit li::marker{
+    content: "✅";
+    color: green;
+    font-size: 1.2em;
 }
